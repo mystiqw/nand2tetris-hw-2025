@@ -27,6 +27,11 @@ jobs:
 
       - name: Check out repository code
         uses: actions/checkout@v4
+        with:
+            fetch-depth: 0 
+            ref: ${{ github.event.pull_request.head.sha }} 
+            submodules: recursive ъ
+
 
       - name: Get changed files
         id: changed-files
