@@ -1,0 +1,4 @@
+git submodule add <repo_url> nand2tetris-hw-2025
+git submodule update --init --recursive
+git commit -am "Fix missing submodule"
+git push origin main
